@@ -1,0 +1,55 @@
+# minimal Rails specific artifacts
+db/*.sqlite3
+log/
+tmp/
+temp/
+doc/
+.yardoc/
+screenshot/
+
+# various artifacts
+**.wargit
+*.rbc
+*.sassc
+.rspec
+/coverage.data
+/coverage/
+/db/*.javadb/
+/db/*.sqlite3-journal
+/doc/api/
+/doc/app/
+/doc/features.html
+/doc/specs.html
+/public/cache
+/public/stylesheets/compiled
+/spec/tmp/
+/cache
+/capybara*
+/capybara-*.html
+/vendor/cache
+/public/assets/*
+
+# scm revert files
+**.orig
+
+# Mac finder artifacts
+.DS_Store
+
+# Netbeans project directory
+/nbproject/
+
+# Textmate project files
+/*.tmpproj
+
+# vim artifacts
+**.swpi
+
+# ctags
+/TAGS
+
+
+#Addition
+vendor/cache
+.bundle/config
+.project
+/reports/**
