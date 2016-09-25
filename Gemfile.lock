@@ -20,19 +20,6 @@ GEM
     gherkin (4.0.0)
     multi_json (1.12.1)
     multi_test (0.1.2)
-    rspec (3.5.0)
-      rspec-core (~> 3.5.0)
-      rspec-expectations (~> 3.5.0)
-      rspec-mocks (~> 3.5.0)
-    rspec-core (3.5.3)
-      rspec-support (~> 3.5.0)
-    rspec-expectations (3.5.0)
-      diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.5.0)
-    rspec-mocks (3.5.0)
-      diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.5.0)
-    rspec-support (3.5.0)
     rubyzip (1.2.0)
     selenium-webdriver (2.53.4)
       childprocess (~> 0.5)
@@ -45,7 +32,6 @@ PLATFORMS
 
 DEPENDENCIES
   cucumber
-  rspec
   selenium-webdriver
 
 BUNDLED WITH
