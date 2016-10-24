@@ -1,8 +1,8 @@
 require 'selenium-webdriver'
-require './features/step_definitions/page_objects/viblo_page_object.rb'
+require './features/step_definitions/page_objects/page_object.rb'
 
 Before do |scenario|
-  @browser = VibloPageObject.new
+  @browser = PageObject.new(PageObject.init_browser)
 end
 
 After do |sceario|

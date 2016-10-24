@@ -1,23 +1,4 @@
-require 'uri'
-
-class VibloPageObject
-  attr_accessor :browser
-  SITE_URL = {
-    google: 'https://www.google.com',
-    viblo: 'https://viblo.asia'
-  }
-  def initialize
-    @browser = Selenium::WebDriver.for :firefox
-  end
-
-  def open(site_name)
-    @browser.navigate.to SITE_URL[site_name.to_sym]
-  end
-
-  def page_title
-    @browser.title
-  end
-
+class VibloPageObject < PageObject
   def fill_search_keyword(keyword, site_name)
     sleep 10
     if site_name == 'google'
@@ -60,14 +41,5 @@ class VibloPageObject
 
   def article_author_of_search_result
     browser.find_elements(:class, 'author')[0].text
-  end
-
-  def save_screen filename
-    sleep 1
-    @browser.save_screenshot("reports/screenshots/#{filename}.png")
-  end
-
-  def quit
-    @browser.quit
   end
 end
