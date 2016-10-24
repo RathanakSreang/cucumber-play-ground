@@ -3,7 +3,7 @@ require 'yaml'
 
 class PageObject
   attr_accessor :browser, :config
-  SITE_URL = {
+  SITE_URL ||= {
     google: 'https://www.google.com',
     viblo: 'https://viblo.asia',
     google_plus: 'https://plus.google.com',
@@ -24,7 +24,7 @@ class PageObject
   end
 
   def save_screen filename
-    sleep 1
+    sleep 5
     @browser.save_screenshot("reports/screenshots/#{filename}.png")
   end
 

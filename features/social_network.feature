@@ -1,9 +1,9 @@
 @social-building
 Feature: Post on social network
-As a developer, I am a busy guy.
-I want to stay connect to my friend.
-And I want to call my friend to handout on Friday night.
-But I always forgot, so I write a script for post on social network for ask my to have a drink.
+As a lazy developer, I have few friends only.
+And I want to have more friends by using social network.
+So on every Friday, I want to write a post which ask my friends on social network to have some drink at night.
+But I always forgot, then I write a script for post my message on social network for ask my friends to have a drink.
 
 Scenario: Login and post on google plus
 When I visit google plus homepage
@@ -25,4 +25,4 @@ And  I fill my facebook password
 And  I click login to facebook
 And  I write my new post on facebook
 Then I click submit my post on facebook
-And  I take a facebook screenshot "google_plus_new_post"
+And  I take a facebook screenshot "facebook_new_post"
